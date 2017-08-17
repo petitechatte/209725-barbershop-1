@@ -52,6 +52,73 @@
           Средства для ухода
         </li>
       </ul>
+
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="producers">
+            <legend>Производители:</legend>
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter" checked>
+              Baxter of California
+            </label>
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty">
+              Mr Natty
+            </label>
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" checked>
+              Suavecito
+            </label>
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz">
+              Malin+Goetz
+            </label>
+            <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murray's">
+              Murray's
+            </label>
+             <label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" checked>
+              American Crew
+            </label>
+          </fieldset>
+
+          <fieldset class="item-groups">
+            <legend>Группы товаров:</legend>
+            <label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="item-group" value="shaving">
+              Бритвенные принадлежности
+            </label>
+            <label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="item-group" value="care" checked>
+              Средства для ухода
+            </label>
+            <label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="item-group" value="accessories">
+              Аксессуары
+            </label>
+          </fieldset>
+
+          <button class="btn" type="submit">Показать</button>
+        </form>
+      </section>
+
+      <section class="catalog-items-block">
+        <h2 class="visually-hidden">Галерея товаров</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3 class="item-title">
+              <span class="item-type">Набор для путешествий</span>
+              <span class="item-name">&laquo;Baxter of California&raquo;</span>
+            </h3>
+            <img class="item-photo" src="img/baxter.jpg" width="" height="" alt="Набор для путешествий &laquo;Baxter of California&raquo;">
+            <p class="item-info">
+              <span class="item-price">2 900</span>
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
