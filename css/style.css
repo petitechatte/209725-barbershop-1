@@ -1,0 +1,14 @@
+/*общие текстовые свойства*/
+
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "PTSans", "Verdana", sans-serif;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
