@@ -4,11 +4,17 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #000000;
-  font-family: "PTSans", "Verdana", sans-serif;
+  font-family: "PTSans NarrowBold", "Verdana", sans-serif;
   text-transform: uppercase;
 }
 
-h1, h2 {
+.section-title {
   font-size: 30px;
   line-height: 42px;
+}
+
+.feature-heading {
+  font-size: 30px;
+  line-height: 42px;
+  color: #f7f4f1;
 }
