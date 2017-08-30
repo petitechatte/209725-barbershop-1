@@ -25,7 +25,7 @@
             <a href="#">Прайс-лист</a>
           </li>
           <li class="navigation-item current-section">
-            <a>Магазин</a>
+            <a href="#">Магазин</a>
           </li>
           <li class="navigation-item">
             <a href="#">Контакты</a>
@@ -114,9 +114,7 @@
                 <span class="item-type">Набор для путешествий</span>
                 <span class="item-name">&laquo;Baxter of California&raquo;</span>
               </h3>
-            </a>
-            <a href="catalog-item.html">
-               <img class="item-photo" src="img/baxter-kit.jpg" width="220" height="165" alt="Набор &laquo;Baxter of California&raquo;">
+              <img class="item-photo" src="img/baxter-kit.jpg" width="220" height="165" alt="Набор &laquo;Baxter of California&raquo;">
             </a>
             <p class="item-info">
               <span class="item-price">2 900 &#8381;</span>
@@ -130,9 +128,7 @@
                 <span class="item-type">Увлажняющий кондиционер</span>
                 <span class="item-name">&laquo;Baxter of California&raquo;</span>
               </h3>
-            </a>
-            <a href="#">
-               <img class="item-photo" src="img/baxter-conditioner.jpg" width="220" height="165" alt="Кондиционер &laquo;Baxter of California&raquo;">
+              <img class="item-photo" src="img/baxter-conditioner.jpg" width="220" height="165" alt="Кондиционер &laquo;Baxter of California&raquo;">
             </a>
             <p class="item-info">
               <span class="item-price">750 &#8381;</span>
@@ -146,9 +142,7 @@
                 <span class="item-type">Гель для волос</span>
                 <span class="item-name">&laquo;Suavecito&raquo;</span>
               </h3>
-            </a>
-            <a href="#">
-               <img class="item-photo" src="img/gel-suavecito.jpg" width="220" height="165" alt="Гель для волос &laquo;Suavecito&raquo;">
+              <img class="item-photo" src="img/gel-suavecito.jpg" width="220" height="165" alt="Гель для волос &laquo;Suavecito&raquo;">
             </a>
             <p class="item-info">
               <span class="item-price">290 &#8381;</span>
@@ -162,9 +156,7 @@
                 <span class="item-type">Глина для укладки волос</span>
                 <span class="item-name">&laquo;American Crew&raquo;</span>
               </h3>
-            </a>
-            <a href="#">
-               <img class="item-photo" src="img/clay-american-crew.jpg" width="220" height="165" alt="Глина &laquo;American Crew&raquo;">
+              <img class="item-photo" src="img/clay-american-crew.jpg" width="220" height="165" alt="Глина &laquo;American Crew&raquo;">
             </a>
             <p class="item-info">
               <span class="item-price">500 &#8381;</span>
@@ -178,9 +170,7 @@
                 <span class="item-type">Гель для волос</span>
                 <span class="item-name">&laquo;American Crew&raquo;</span>
               </h3>
-            </a>
-            <a href="#">
-               <img class="item-photo" src="img/gel-american-crew.jpg" width="220" height="165" alt="Гель для волос &laquo;American Crew&raquo;">
+              <img class="item-photo" src="img/gel-american-crew.jpg" width="220" height="165" alt="Гель для волос &laquo;American Crew&raquo;">
             </a>
             <p class="item-info">
               <span class="item-price">300 &#8381;</span>
@@ -194,10 +184,7 @@
                 <span class="item-type">Набор для бритья</span>
                 <span class="item-name">&laquo;Baxter of California&raquo;</span>
               </h3>
-            </a>
-
-            <a href="#">
-               <img class="item-photo" src="img/baxter-shaving-kit.jpg" width="220" height="165" alt="Набор &laquo;Baxter of California&raquo;">
+              <img class="item-photo" src="img/baxter-shaving-kit.jpg" width="220" height="165" alt="Набор &laquo;Baxter of California&raquo;">
             </a>
             <p class="item-info">
               <span class="item-price">3 900 &#8381;</span>
@@ -227,7 +214,7 @@
       <h3 class="visually-hidden">Наш адрес</h3>
       <p class="contacts-info">Барбершоп &laquo;Бородинский&raquo;<br>
         Адрес: г.&nbsp;Санкт-Петербург, Б.&nbsp;Конюшенная, д.&nbsp;19/8<br>
-        <a class="location-link" href="#">Как нас найти?</a><br>
+        <a class="location-link" href="img/full-map.png">Как нас найти?</a><br>
         Телефон: +7&nbsp;(495)&nbsp;666-02-66</p>
 
       <h3 class="visually-hidden">Мы в соцсетях</h3>
@@ -252,10 +239,12 @@
       <p class="login-info">Введите, пожалуйста, свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <input type="text" name="login" placeholder="Логин">
+          <label class="visually-hidden" for="login-field">Логин</label>
+          <input type="text" name="login" id="login-field" placeholder="Логин" required>
         </p>
         <p>
-          <input type="password" name="password" placeholder="Пароль">
+          <label class="visually-hidden" for="password-field">Пароль</label>
+          <input type="password" name="password" id="password-field" placeholder="Пароль" required>
         </p>
         <p class="password-info">
           <label>
@@ -268,7 +257,13 @@
           <button class="btn btn-submint" type="submit">Войти</button>
         </p>
       </form>
-      <button class="close" type="button">x</button>
+      <button class="close" type="button">Закрыть</button>
+    </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="img/map.png" alt="г.&nbsp;Санкт-Петербург, Б.&nbsp;Конюшенная, д.&nbsp;19/8">
+      <button class="close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
