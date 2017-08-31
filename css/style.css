@@ -4,7 +4,8 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #000000;
-  font-family: "PTSans NarrowBold", "Verdana", sans-serif;
+  font-family: "PTSans Narrow", "Arial Narrow", "Arial", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
