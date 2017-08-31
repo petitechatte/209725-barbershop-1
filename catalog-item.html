@@ -131,17 +131,15 @@
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="login-field">Логин</label>
-          <input type="text" name="login" id="login-field" placeholder="Логин" required>
+          <input type="text" name="login" id="login-field" required>
         </p>
         <p>
           <label class="visually-hidden" for="password-field">Пароль</label>
-          <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+          <input type="password" name="password" id="password-field" required>
         </p>
         <p class="password-info">
-          <label>
-            <input class="visually-hidden" type="checkbox" name="remember" checked>
-            Запомните меня
-          </label>
+          <input class="visually-hidden" type="checkbox" name="remember" id="remember-me" checked>
+          <label for="remember-me">Запомните меня</label>
           <a class="reset" href="#">Я забыл пароль!</a>
         </p>
         <p>
@@ -151,7 +149,7 @@
       <button class="close" type="button">Закрыть</button>
     </section>
 
-    <section class="map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Карта проезда</h2>
       <img src="img/map.png" width="766" height="560" alt="г.&nbsp;Санкт-Петербург, Б.&nbsp;Конюшенная, д.&nbsp;19/8">
       <button class="close" type="button">Закрыть</button>

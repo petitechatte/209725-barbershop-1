@@ -1,6 +1,10 @@
-/*общие текстовые свойства*/
+/*общие свойства*/
 
+html,
 body {
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 24px;
   color: #f7f4f1;
@@ -14,13 +18,192 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-title {
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.btn {
+  border: none;
+
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.btn:hover {
+  background-color: #663d15;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+  border: 2px solid #000101;
+
+  font: inherit;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+input[type="checkbox"]:hover + label,
+input[type="checkbox"]:focus + label,
+input[type="radio"]:hover + label,
+input[type="radio"]:focus + label {
+  color: #663d15
+}
+
+/*навигация*/
+
+.page-header {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.main-logo-container {
+  margin: 0;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.user-navigation a:active {
+  background-color: #242424;
+}
+
+/*преимущества*/
+
+.features {
+  text-align: center;
+}
+
+.features-list {
+  list-style: none;
+  list-style: none;
+}
+
+.section-title,
+.feature-heading {
   font-size: 30px;
   line-height: 42px;
 }
 
-.feature-heading {
+/*колонки*/
+
+.index-columns {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url(../img/white-pattern.jpg);
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news time {
+  text-transform: none;
+}
+
+/*подвал*/
+
+.page-footer {
+  color: #ffffff;
+
+  background-color: #222222;
+  background-image: url(../img/footer-pattern.jpg);
+}
+
+.page-footer a {
+  color: #ffffff;
+}
+
+.location-link {
+  text-decoration: underline;
+}
+
+.location-link:hover,
+.location-link:focus,
+.location-link:active {
+  text-decoration: none;
+}
+
+.socials-list {
+  list-style: none;
+}
+
+.social-btn {
+  background-color: #000000;
+}
+
+.social-btn:hover,
+.social-btn:focus,
+.social-btn:active,
+.btn-developer:hover,
+.btn-developer:focus,
+.btn-developer:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+/*модальные окна*/
+
+.modal-login {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url(../img/white-pattern.jpg);
+}
+
+.modal-login h2 {
   font-size: 30px;
-  line-height: 42px;
-  color: #f7f4f1;
+  line-height: 1.2;
+}
+
+.login-form input {
+  text-transform: uppercase;
+}
+
+.login-form .reset {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.login-form .reset:hover,
+.login-form .reset:focus,
+.login-form .reset:active {
+  text-decoration: none;
+}
+
+.modal-map {
+  border: 7px solid #fefefe;
+
+  background-color: #aba9a7;
 }
